@@ -1,0 +1,106 @@
+@import "../mixins/mixins-master";
+:root {
+  --screen-xs-min: 385px;
+  --screen-sm-min: 391px;
+  --screen-md-min: 768px;
+  --screen-lg-min: 1024px;
+  --screen-xl-min: 1288px;
+  --screen-xxl-min: 1700px;
+
+  /* ── Blue scale (Figma) ── */
+  --Blue-600: #003870;
+  --Blue-500: #014799;
+  --Blue-400: #2b5dbc;
+  --Blue-300: #489cf0;
+  --Blue-200: #b3d6fc;
+  --Blue-100: #e8f1fa;
+
+  /* ── Neutrals (Figma) ── */
+  --Black: #090909;
+  --Dark-Grey: #626262;
+  --Grey: #cccccc;
+  --Light-Grey: #ededed;
+  --White: #ffffff;
+
+  /* ── Semantic aliases ── */
+  --Primary: var(--Blue-500);       /* main CTA / brand */
+  --Primary-dark: var(--Blue-600);  /* hover / pressed */
+  --Secondary: var(--Blue-300);     /* secondary CTA */
+  --White-Bg: var(--Light-Grey);    /* page background tint */
+
+  --font-text: "sofia-pro", sans-serif;
+  --font-titles: "sofia-pro", sans-serif;
+
+  --font__size_base: 16px;
+  --font__line-height-body: 140%;
+  --font__line-height-heading: 90%;
+
+  /* ── Body scale (Figma) ── */
+  --body-font-xxs: 1.2rem;   /* XSmall text  12px */
+  --body-font-xs:  1.4rem;   /* Small text   14px */
+  --body-font-s:   1.6rem;   /* Body S       16px */
+  --body-font-m:   1.8rem;   /* Body M       18px */
+  --body-font-l:   2rem;     /* Body L       20px */
+  --body-font-xl:  2.8rem;   /* Body XL      28px */
+
+  /* ── Headline scale (Figma) ── */
+  --h5-font-size:      1.8rem;  /* H5  18px  Bold  */
+  --h4-font-size:      2rem;    /* H4  20px  Bold  */
+  --h3-font-size:      2.8rem;  /* H3  28px  Bold  */
+  --h2-font-size:      3.2rem;  /* H2  32px  Black */
+  --h1-font-size:      4rem;    /* H1  40px  Black */
+  --display-font-size: 6.4rem;  /* Display 64px Black */
+
+  --lp-block-gap__sm: 5.5rem;
+  --lp-block-gap__md: 6rem;
+  --lp-block-gap__lg: 8rem;
+  --block-gap: var(--lp-block-gap__sm);
+  @include md-up {
+    --block-gap: var(--lp-block-gap__md);
+  }
+  @include lg-up {
+    --block-gap: var(--lp-block-gap__lg);
+  }
+
+  --radius-m: 1.6rem;
+  --radius-l: 2rem;
+  --radius-xl: 2.7rem;
+  --border-radius: var(--radius-m);
+  @include lg-up {
+    --border-radius: var(--radius-l);
+  }
+
+  --body-font: var(--body-font-m);
+  --body-font-sm: var(--body-font-s);
+  @include md-up {
+    --body-font: var(--body-font-l);
+    --body-font-sm: var(--body-font-m);
+  }
+
+  --lp-font-s: 1.4rem;
+  --lp-font-s-lg: 1.6rem;
+  --body-font-s: var(--lp-font-s);
+  @include lg-up {
+    --body-font-s: var(--lp-font-s-lg);
+  }
+
+  /* ── Button font sizes (Figma) ── */
+  --btn-font-s:  1.6rem;  /* Button S  16px Semi Bold */
+  --btn-font-m:  1.8rem;  /* Button M  18px Semi Bold */
+  --btn-font-l:  2rem;    /* Button L  20px Semi Bold */
+  --btn-font-xl: 2.8rem;  /* Button XL 28px Semi Bold */
+
+  --btn-font: var(--btn-font-m);
+  @include lg-up {
+    --btn-font: var(--btn-font-l);
+  }
+
+  --h2_font-size-sm: 2.8rem;   /* mobile  → matches H3 size  */
+  --h2_font-size-md: 3.2rem;   /* desktop → matches --h2-font-size */
+  --h2_font-size: var(--h2_font-size-sm);
+  @include md-up {
+    --h2_font-size: var(--h2_font-size-md);
+  }
+
+  --columns: 12;
+}

@@ -1,0 +1,326 @@
+@import "../mixins/mixins-master";
+
+// ─── SVG check icon used in features list ──────────────────
+// inline SVG already in HTML, no extra var needed
+
+.lp-hero {
+  position: relative;
+  width: 100%;
+  padding: 0;
+
+  // ── Desktop outer padding (gives the rounded card look) ──
+  @include lg-up {
+    padding: 2.4rem;
+    
+  }
+
+  // ──────────────────────────────────────────────────────────
+  // Image wrapper — max-height 1350px, contains photo + overlays
+  // ──────────────────────────────────────────────────────────
+  &__img-wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 135rem;
+    margin: 0 auto;
+
+    // Mobile
+    height: 48.6rem;
+
+    @include md-up {
+      height: 64rem;
+    }
+
+    @include lg-up {
+      height: 61.5rem;
+      max-height: 135rem; // 1350px cap
+      border-radius: 5rem;
+    }
+  }
+
+  // ──────────────────────────────────────────────────────────
+  // Background photo
+  // ──────────────────────────────────────────────────────────
+  &__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // Mobile: show upper part of photo (doctor face visible)
+    object-position: 70% top;
+
+    @include lg-up {
+      object-position: right center;
+    }
+  }
+
+  // ──────────────────────────────────────────────────────────
+  // Google badge — replaced by lp-header__google-drop
+  // ──────────────────────────────────────────────────────────
+  &__google-badge {
+    display: none;
+  }
+
+  // ──────────────────────────────────────────────────────────
+  // Overlay — container sits absolute over the image, full height
+  // Card is positioned inside it
+  // ──────────────────────────────────────────────────────────
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    // container already sets max-width + margin:auto + side padding
+    // we just need it to fill the full height
+    height: 100%;
+    display: flex;
+    align-items: flex-end;         // Mobile: card sits at the bottom
+    padding-bottom: 0;
+
+    @include md-up {
+      align-items: center;         // Tablet: vertically centered
+      padding-top: 0;
+    }
+
+    @include lg-up {
+      align-items: center;         // Desktop: centered vertically
+    }
+  }
+
+  // ──────────────────────────────────────────────────────────
+  // Frosted-glass content card — positioned inside __overlay
+  // ──────────────────────────────────────────────────────────
+  &__card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    // ── Mobile: compact, full-width of container ──
+    width: 24rem;
+    padding: 1.6rem;
+    border-radius: 1.6rem;
+    margin-bottom: 0;
+
+    @include md-up {
+      width: 30.2rem;
+      padding: 2.4rem;
+      border-radius: 1.6rem;
+      gap: 2rem;
+      // Left side of the container
+      margin-right: auto;
+    }
+
+    @include lg-up {
+      width: 53rem;
+      padding: 3rem 4rem;
+      border-radius: 3rem;
+      gap: 3rem;
+      margin-right: auto;
+    }
+  }
+
+  &__card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    @include md-up {
+      gap: 0.8rem;
+    }
+
+    @include lg-up {
+      gap: 0.7rem;
+    }
+  }
+
+  // ──────────────────────────────────────────────────────────
+  // Headline inside card
+  // ──────────────────────────────────────────────────────────
+  &__title {
+    font-family: var(--font-titles);
+    font-weight: 900;
+    color: var(--Blue-600);
+    margin: 0;
+    line-height: 1.2;
+
+    // Mobile: H1 size (40px)
+    font-size: var(--h1-font-size);
+
+    @include md-up {
+      // Tablet: between H1 and Display
+      font-size: 4.8rem;
+    }
+
+    @include lg-up {
+      // Desktop: Display (64px)
+      // font-size: var(--display-font-size);
+    }
+  }
+
+  // ──────────────────────────────────────────────────────────
+  // Subtitle inside card
+  // ──────────────────────────────────────────────────────────
+  &__subtitle {
+    font-family: var(--font-text);
+    font-weight: 400;
+    color: var(--Black);
+    margin: 0;
+    line-height: 1.4;
+
+    // Mobile: Body L (20px)
+    font-size: var(--body-font-l);
+
+    @include md-up {
+      font-size: 2.4rem;
+    }
+
+    @include lg-up {
+      // Desktop: Body XL (28px)
+      // font-size: var(--body-font-l);
+    }
+  }
+
+  // ──────────────────────────────────────────────────────────
+  // TV logos — desktop card only
+  // ──────────────────────────────────────────────────────────
+  &__partners {
+    display: none;
+
+    @include lg-up {
+      display: block;
+
+      img {
+        height: 4rem;
+        width: auto;
+        max-width: 100%;
+      }
+    }
+  }
+
+  // ──────────────────────────────────────────────────────────
+  // CTA wrappers
+  // ──────────────────────────────────────────────────────────
+  &__cta {
+
+    // Desktop CTA — inside the card
+    &--desktop {
+      display: none;
+
+      @include lg-up {
+        display: block;
+      }
+
+      // Override btn-item alignment for desktop card
+      .btn-item {
+        min-width: 35rem;
+      }
+
+      .btn-item span {
+        color: var(--Black);
+      }
+    }
+
+    // Mobile/tablet CTA — inside the bottom bar
+    &--bottom {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-top: 0.4rem;
+
+      @include lg-up {
+        display: none;
+      }
+
+      .btn-item {
+        width: 100%;
+        max-width: 35rem;
+        align-items: center;
+      }
+
+      // Sub-label in dark bar: white text
+      .btn-item span {
+        color: rgba(255, 255, 255, 0.85);
+      }
+    }
+  }
+
+  // ──────────────────────────────────────────────────────────
+  // Bottom features bar — Blue/600
+  // ──────────────────────────────────────────────────────────
+  &__bottom {
+    background-color: var(--Blue-600);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 1.6rem 2rem 2.4rem; // smaller than before
+
+    @include md-up {
+      padding: 2rem 8rem 2.4rem;
+    }
+
+    @include lg-up {
+      // Desktop: compact horizontal bar
+      flex-direction: row;
+      justify-content: center;
+      gap: 6rem;
+      padding: 0 3.2rem;
+      height: 8rem;       // was 12rem
+      max-width: 128rem;
+      margin: 0 auto;
+      border-radius: 1.6rem;
+      margin-top: -3rem;
+      position: relative;
+      z-index: 5;
+    }
+  }
+
+  // ──────────────────────────────────────────────────────────
+  // Features list
+  // ──────────────────────────────────────────────────────────
+  &__features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    @include lg-up {
+      flex-direction: row;
+      gap: 9rem;
+      align-items: center;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: var(--White);
+      font-family: var(--font-text);
+      font-size: var(--body-font-l);  // 1.6rem mobile
+      font-weight: 600;
+      line-height: 1;
+
+      @include lg-up {
+        font-size: var(--btn-font-m);  // 1.8rem desktop
+        white-space: nowrap;
+      }
+
+      svg {
+        flex-shrink: 0;
+      }
+    }
+  }
+}
