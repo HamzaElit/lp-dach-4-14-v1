@@ -353,7 +353,7 @@
 
 .embla__dot {
   appearance: none;
-  background-color: var(--Primary);
+  background-color: #ccc;
   touch-action: manipulation;
   display: inline-flex;
   text-decoration: none;
@@ -371,9 +371,7 @@
 }
 
 .embla__dot--selected {
-  background-color: var(--Primary-3);
-  width: 18px;
-  height: 18px;
+  background-color: var(--Blue-300);
 }
 
 .embla[data-mobile-only="1"] .embla__nav {

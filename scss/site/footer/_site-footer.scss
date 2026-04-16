@@ -1,11 +1,7 @@
 .lp-footer {
-  padding: 0 0 8rem;
   text-align: center;
   color: var(--Black);
-
-  @include lg-up {
-    padding: 0 0 10rem;
-  }
+  padding-block: var(--block-gap);
 
   &__title {
     font-family: var(--font-titles);

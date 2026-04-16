@@ -1,109 +1,124 @@
 @import "../mixins/mixins-master";
 
 .lp-support {
-  background: linear-gradient(135deg, #024a96 0%, #001f44 100%);
-  padding: 5rem 0;
-
-  @include lg-up {
-    padding: 8rem 0;
-  }
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
-
-    @include lg-up {
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 8rem;
-    }
-  }
-
-  &__content {
-    text-align: center;
-    color: #ffffff;
-    max-width: 60rem;
-
-    @include lg-up {
-      text-align: left;
-    }
-  }
+  padding-block: var(--block-gap);
+  background-color: var(--Blue-500);
 
   &__title {
     font-family: var(--font-titles);
-    font-size: 2.8rem;
-    font-weight: 800;
-    line-height: 1.3;
-    margin: 0 0 2rem 0;
-    color: #ffffff;
+    font-size: var(--h2_font-size);
+    font-weight: 900;
+    color: var(--White);
+    text-align: center;
+    line-height: 1.2;
+    margin: 0 0 3.2rem;
 
     @include lg-up {
-      font-size: 3.4rem;
+      margin-bottom: 4rem;
     }
   }
 
-  &__text {
+  // ── 3-card grid ───────────────────────────────────────────────────────────
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-bottom: 3.2rem;
+
+    @include lg-up {
+      flex-direction: row;
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  // ── Individual card ───────────────────────────────────────────────────────
+  &__card {
+    background: var(--White);
+    border-radius: var(--radius-l);
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__card-img-wrap {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center top;
+    aspect-ratio: 4 / 3;
+
+    @include lg-up {
+      aspect-ratio: 3 / 2;
+    }
+  }
+
+  &__card-body {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.6rem 2rem;
+
+    @include lg-up {
+      padding: 1.6rem 2.4rem;
+    }
+  }
+
+  // ── Numbered badge ────────────────────────────────────────────────────────
+  &__step-badge {
+    flex-shrink: 0;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    background-color: var(--Blue-300);
+    color: var(--White);
+    font-family: var(--font-titles);
+    font-size: var(--body-font-s);
+    font-weight: 700;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include lg-up {
+      width: 3.2rem;
+      height: 3.2rem;
+      font-size: var(--body-font-m);
+    }
+  }
+
+  &__card-label {
     font-family: var(--font-text);
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.5;
+    font-size: var(--body-font-s);
+    font-weight: 700;
+    color: var(--Black);
+    line-height: 1.3;
     margin: 0;
-    color: #ffffff;
 
     @include lg-up {
-      font-size: 1.7rem;
-      line-height: 1.6;
+      font-size: var(--body-font-m);
     }
   }
 
-  &__action {
+  // ── CTA ───────────────────────────────────────────────────────────────────
+  &__cta {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem;
-  }
+    gap: 0.8rem;
 
-  &__icon {
-    width: 100px;
-    height: auto;
-
-    @include lg-up {
-      width: 120px;
-    }
-  }
-
-  &__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-text);
-    font-weight: 700;
-    font-size: 1.6rem;
-    color: #003a7a;
-    background-color: #ebebeb;
-    border: none;
-    border-radius: 100px;
-    padding: 1.4rem 4rem;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-
-    @include lg-up {
-      font-size: 1.8rem;
-      padding: 1.6rem 5rem;
-    }
-
-    &:hover {
-      background-color: #ffffff;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-    }
-
-    &:active {
-      transform: translateY(0);
+    .btn-item span {
+      color: var(--Blue-200);
     }
   }
 }

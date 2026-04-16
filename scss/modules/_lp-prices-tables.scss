@@ -1,5 +1,6 @@
 .lp-prices-tables {
   padding: 4rem 0;
+  background-color: var(--White);
 
   @include lg-up {
     padding: 8rem 0;
@@ -78,7 +79,7 @@
 
   &__image {
     width: 100%;
-    max-width: 550px;
+    max-width: 370px;
     height: auto;
     display: block;
 

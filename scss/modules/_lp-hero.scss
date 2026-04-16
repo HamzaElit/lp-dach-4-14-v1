@@ -110,7 +110,7 @@
     width: 24rem;
     padding: 1.6rem;
     border-radius: 1.6rem;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
 
     @include md-up {
       width: 30.2rem;
@@ -119,6 +119,7 @@
       gap: 2rem;
       // Left side of the container
       margin-right: auto;
+      margin-bottom: 0;
     }
 
     @include lg-up {
@@ -155,7 +156,7 @@
     line-height: 1.2;
 
     // Mobile: H1 size (40px)
-    font-size: var(--h1-font-size);
+    font-size: 3.8rem;
 
     @include md-up {
       // Tablet: between H1 and Display
@@ -265,12 +266,16 @@
     align-items: center;
     gap: 1.6rem;
     padding: 1.6rem 2rem 2.4rem; // smaller than before
+    width: min(calc(100% - 4rem), 67.4rem);
+    margin-left: auto;
+    margin-right: auto;
 
     @include md-up {
       padding: 2rem 8rem 2.4rem;
     }
 
     @include lg-up {
+      width: 100%;
       // Desktop: compact horizontal bar
       flex-direction: row;
       justify-content: center;

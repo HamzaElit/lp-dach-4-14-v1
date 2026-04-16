@@ -1,20 +1,23 @@
 @import "../mixins/mixins-master";
 
 .lp-benefits {
+  background-color: var(--Light-Grey);
   padding: 6rem 0;
-  padding-top: 1rem;
+
+  @include md-up {
+    padding: 6rem 0;
+  }
 
   @include lg-up {
     padding: 10rem 0;
-    padding-top: 4rem;
   }
 
   &__header {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     display: block;
 
     @include lg-up {
-      margin-bottom: 6rem;
+      margin-bottom: 4rem;
     }
   }
 
@@ -23,10 +26,10 @@
     width: 100%;
     max-width: 100%;
     font-family: var(--font-titles);
-    font-size: 2.8rem;
+    font-size: var(--h2-font-size); // 32px
     font-weight: 900;
-    color: #1a1a1a;
-    line-height: 1.25;
+    color: var(--Black);
+    line-height: 1.2;
     margin: 0;
     text-align: center;
   }
@@ -38,11 +41,13 @@
 
     @include lg-up {
       grid-template-columns: repeat(3, 1fr);
-      gap: 2.4rem;
+      gap: 4rem;
     }
   }
 
   &__card {
+    max-width: 490px;
+    margin: 0 auto;
     position: relative;
     background-color: #ffffff;
     border-radius: 1.6rem;
@@ -82,17 +87,17 @@
 
   &__card-title {
     font-family: var(--font-titles);
-    font-size: 1.8rem;
-    font-weight: 900;
-    color: #1a1a1a;
-    line-height: 1.35;
-    margin: 0 0 3.2rem 0;
+    font-size: var(--btn-font-l); // 20px SemiBold
+    font-weight: 700;
+    color: var(--Black);
+    line-height: 1.2;
+    margin: 0 0 1.6rem 0;
 
     @include lg-up {
       min-height: 52px;
       display: flex;
       align-items: flex-end;
-      font-size: 2rem;
+      font-size: var(--btn-font-l); // 20px
     }
   }
 
@@ -100,16 +105,51 @@
     height: 12rem;
     width: auto;
     object-fit: contain;
-    margin-bottom: 3.2rem;
+    margin-bottom: 1.6rem;
     flex-shrink: 0;
   }
 
   &__card-text {
     font-family: var(--font-text);
-    font-size: 1.5rem;
+    font-size: var(--body-font-s); // 16px
     font-weight: 400;
-    color: #4a4a4a;
-    line-height: 1.6;
+    color: var(--Black);
+    line-height: 1.4;
     margin: 0;
+  }
+
+  // ─── CTA below grid ───────────────────────────────────
+  &__cta {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+    @include md-up {
+      margin-top: 3.2rem;
+    }
+
+    @include lg-up {
+      margin-top: 4rem;
+    }
+
+    .btn-item {
+
+      @include lg-up {
+        width: auto;
+        min-width: 35rem;
+      }
+    }
+
+    .btn {
+      width: 100%;
+
+      @include lg-up {
+        width: auto;
+      }
+    }
+
+    .btn-item span {
+      color: var(--Black);
+    }
   }
 }

@@ -2,14 +2,21 @@
   text-align: center;
   padding-block: 30px;
 
-  &_title{
-    font-family: var(--h2-font-size);
+  &__title{
+    font-size: var(--h4-font-size);
+    margin-bottom: 2rem;
+    color: var(--Primary);
+    font-weight: 900;
+    @include md-up {
+      font-size: var(--h3-font-size);
+    }
   }
   @include md-up {
     padding-block: 60px;
   }
   img {
-    height: 72px;
+    max-height: 72px;
+    max-width: 100%;
     width: auto;
     @include md-up {
       height: 100px;
