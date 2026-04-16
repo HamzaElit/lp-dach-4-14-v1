@@ -64,6 +64,7 @@
       // Mobile/tablet: spans full 2 columns
       grid-column: 1 / -1;
       padding-bottom: 0;
+      box-shadow: 0 0 2rem 0 var(--Blue-300);
 
       @include lg-up {
         // Desktop: right column spans both rows
@@ -95,15 +96,15 @@
 
   &__label {
     font-family: var(--font-text);
-    font-size: var(--body-font-s);
+    font-size: 1.6rem;
+    @include md-up{
+      font-size: 2.5rem;
+    }
     font-weight: 700;
     color: var(--Black);
     text-align: center;
     line-height: 1.4;
 
-    @include lg-up {
-      font-size: var(--body-font-m);
-    }
   }
 
   // ── Final card (6. Monat) ─────────────────────────────────────────────────

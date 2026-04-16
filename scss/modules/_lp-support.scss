@@ -2,7 +2,7 @@
 
 .lp-support {
   padding-block: var(--block-gap);
-  background-color: var(--Blue-500);
+  background: radial-gradient(ellipse at center, rgba(2, 84, 179, 1) 0%, rgba(2, 66, 139, 1) 50%, rgba(1, 47, 99, 1) 100%);
 
   &__title {
     font-family: var(--font-titles);
@@ -68,6 +68,7 @@
     align-items: center;
     gap: 1.2rem;
     padding: 1.6rem 2rem;
+    background-color: var(--Blue-100);
 
     @include lg-up {
       padding: 1.6rem 2.4rem;
@@ -80,7 +81,7 @@
     width: 2.8rem;
     height: 2.8rem;
     border-radius: 50%;
-    background-color: var(--Blue-300);
+    background-color: var(--Blue-600);
     color: var(--White);
     font-family: var(--font-titles);
     font-size: var(--body-font-s);
