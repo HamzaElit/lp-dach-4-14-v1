@@ -1,0 +1,1128 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://use.typekit.net/mqn3cay.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- GSAP for scroll animations -->
+    <title>Elithair</title>
+  </head>
+
+  <body>
+    <header class="lp-header">
+      <!-- Main Nav -->
+      <div class="lp-header__main">
+        <div class="lp-header__main-inner container">
+          <a href="/" class="lp-header__logo">
+            <img
+              src="assets/images/Elithair-Logo-Primary.svg"
+              alt="Elithair Logo"
+            />
+          </a>
+
+          <nav class="lp-header__nav">
+            <ul class="lp-header__menu">
+              <li class="lp-header__item">
+                <a href="#preis" class="lp-header__link">Preis</a>
+              </li>
+              <li class="lp-header__item">
+                <a href="#erfahrungsberichte" class="lp-header__link"
+                  >Erfahrungsberichte</a
+                >
+              </li>
+              <li class="lp-header__item">
+                <a href="#vorteile" class="lp-header__link">Vorteile</a>
+              </li>
+              <li class="lp-header__item">
+                <a href="#faq" class="lp-header__link">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="lp-header__google-reviews">
+            <img
+              src="assets/images/google-reviews.svg"
+              alt="Google Reviews 4.96"
+            />
+          </div>
+        </div>
+        <!-- Google drop — hangs below header on mobile/tablet only -->
+        <div class="lp-header__google-drop">
+          <img
+            src="assets/images/google-reviews.svg"
+            alt="Google Reviews 4.96"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="lp-hero">
+
+        <!-- Image wrapper — max-height 1350px -->
+        <div class="lp-hero__img-wrap">
+          <picture class="lp-hero__bg">
+            <source media="(min-width: 1024px)" srcset="assets/images/hero.jpeg" />
+            <img
+              src="assets/images/hero-mobile.jpg"
+              alt="Elithair Haartransplantation"
+              class="lp-hero__bg-img"
+            />
+          </picture>
+
+          <!-- Google badge (mobile + tablet, top-left) -->
+          <div class="lp-hero__google-badge">
+            <img src="assets/images/google-reviews.svg" alt="Google Reviews 4.96" />
+          </div>
+
+          <!-- Container sits absolute in image center, card lives inside it -->
+          <div class="container lp-hero__overlay">
+            <div class="lp-hero__card">
+              <div class="lp-hero__card-text">
+                <h1 class="lp-hero__title">Endlich volles Haar</h1>
+                <p class="lp-hero__subtitle">mit einer Haartransplantation bei Elithair</p>
+              </div>
+
+              <!-- TV logos — desktop only -->
+              <div class="lp-hero__partners">
+                <img src="assets/images/hero-partner.svg" alt="TV-Sender: SAT.1, ARD, RTL, WELT und weitere" />
+              </div>
+
+              <!-- CTA button — desktop only -->
+              <div class="lp-hero__cta lp-hero__cta--desktop">
+                <div class="btn-item">
+                  <a href="#preis" class="btn btn--secondary btn--large">Bin ich geeignet?</a>
+                  <span>Von Ärzten prüfen lassen</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Features bar + CTA (all breakpoints) -->
+        <div class="lp-hero__bottom">
+          <ul class="lp-hero__features">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M16,32A16,16,0,1,0,0,16,16,16,0,0,0,16,32Zm7.063-18.937-8,8a1.494,1.494,0,0,1-2.119,0l-4-4a1.5,1.5,0,1,1,2.119-2.119L14,17.881l6.938-6.944a1.5,1.5,0,0,1,2.119,2.119Z" fill="#489cf0"/>
+              </svg>
+              <span>Kompletter Ablauf unter 72 h</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M16,32A16,16,0,1,0,0,16,16,16,0,0,0,16,32Zm7.063-18.937-8,8a1.494,1.494,0,0,1-2.119,0l-4-4a1.5,1.5,0,1,1,2.119-2.119L14,17.881l6.938-6.944a1.5,1.5,0,0,1,2.119,2.119Z" fill="#489cf0"/>
+              </svg>
+              <span>8 deutsche Standorte</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M16,32A16,16,0,1,0,0,16,16,16,0,0,0,16,32Zm7.063-18.937-8,8a1.494,1.494,0,0,1-2.119,0l-4-4a1.5,1.5,0,1,1,2.119-2.119L14,17.881l6.938-6.944a1.5,1.5,0,0,1,2.119,2.119Z" fill="#489cf0"/>
+              </svg>
+              <span>+150.000 glückliche Patienten</span>
+            </li>
+          </ul>
+
+          <!-- CTA inside bottom bar — mobile + tablet -->
+          <div class="lp-hero__cta lp-hero__cta--bottom">
+            <div class="btn-item">
+              <a href="#preis" class="btn btn--secondary">Bin ich geeignet?</a>
+              <span>Von Ärzten prüfen lassen</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="lp-certified">
+        <div class="container">
+          <h2 class="lp-certified__title">Zertifizert durch Experten</h2>
+          <img src="assets//images/certified.svg" alt="certified" />
+        </div>
+      </section>
+
+      <section class="lp-suitability-check">
+        <div class="container">
+          <div class="lp-suitability-check__intro">
+            <h2 class="lp-suitability-check__title">
+              Ist eine Haartransplantation<br />das Richtige für Sie?
+            </h2>
+            <p class="lp-suitability-check__subtitle">Jetzt Eignung checken.</p>
+          </div>
+  
+          <div class="lp-suitability-check__card">
+            <div class="container">
+              
+            </div>
+            <h3 class="lp-suitability-check__card-title">Welche Situation trifft auf Sie zu?</h3>
+  
+            <ul class="lp-suitability-check__rows">
+              <li class="lp-suitability-check__row">
+                <img
+                  src="assets/images/sc1.png"
+                  alt="Geheimratsecken"
+                  class="lp-suitability-check__row-img"
+                  loading="lazy"
+                />
+                <span class="lp-suitability-check__row-label">Geheimratsecken</span>
+              </li>
+              <li class="lp-suitability-check__row">
+                <img
+                  src="assets/images/sc2.png"
+                  alt="Tonsur"
+                  class="lp-suitability-check__row-img"
+                  loading="lazy"
+                />
+                <span class="lp-suitability-check__row-label">Tonsur</span>
+              </li>
+              <li class="lp-suitability-check__row">
+                <img
+                  src="assets/images/sc3.png"
+                  alt="Gesamter Kopf"
+                  class="lp-suitability-check__row-img"
+                  loading="lazy"
+                />
+                <span class="lp-suitability-check__row-label">Gesamter Kopf</span>
+              </li>
+              <li class="lp-suitability-check__row">
+                <img
+                  src="assets/images/sc4.png"
+                  alt="Kein Bart"
+                  class="lp-suitability-check__row-img"
+                  loading="lazy"
+                />
+                <span class="lp-suitability-check__row-label">Kein Bart</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+      </section>
+      <!-- / lp-suitability-check -->
+
+      <section class="lp-treatment-comparison">
+        <div class="container">
+          <h2 class="lp-treatment-comparison__title">
+            Die medizinisch einzige Möglichkeit<br />auf echte Haare an kahlen Stellen.
+          </h2>
+
+          <div class="lp-treatment-comparison__layout">
+
+            <!-- 4 rejection cards -->
+            <div class="lp-treatment-comparison__grid">
+
+              <!-- Card 1: Haarstyling -->
+              <div class="lp-treatment-comparison__card">
+                <div class="lp-treatment-comparison__card-img-wrap">
+                  <img
+                    src="assets/images/tc1.webp"
+                    alt="Haarstyling"
+                    class="lp-treatment-comparison__card-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="lp-treatment-comparison__card-body">
+                  <p class="lp-treatment-comparison__card-name">Haarstyling</p>
+                </div>
+              </div>
+
+              <!-- Card 2: Anti-Haarausfall Shampoo -->
+              <div class="lp-treatment-comparison__card">
+                <div class="lp-treatment-comparison__card-img-wrap">
+                  <img
+                    src="assets/images/tc2.webp"
+                    alt="Anti-Haarausfall Shampoo"
+                    class="lp-treatment-comparison__card-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="lp-treatment-comparison__card-body">
+                  <p class="lp-treatment-comparison__card-name">Anti-Haarausfall<br />Shampoo</p>
+                </div>
+              </div>
+
+              <!-- Card 3: Medikamente -->
+              <div class="lp-treatment-comparison__card">
+                <div class="lp-treatment-comparison__card-img-wrap">
+                  <img
+                    src="assets/images/tc3.webp"
+                    alt="Medikamente"
+                    class="lp-treatment-comparison__card-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="lp-treatment-comparison__card-body">
+                  <p class="lp-treatment-comparison__card-name">Medikamente</p>
+                  <p class="lp-treatment-comparison__card-desc">können bestehendes Haar schützen.</p>
+                </div>
+              </div>
+
+              <!-- Card 4: Haarteile / Perücken -->
+              <div class="lp-treatment-comparison__card">
+                <div class="lp-treatment-comparison__card-img-wrap">
+                  <img
+                    src="assets/images/tc4.webp"
+                    alt="Haarteile / Perücken"
+                    class="lp-treatment-comparison__card-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="lp-treatment-comparison__card-body">
+                  <p class="lp-treatment-comparison__card-name">Haarteile / Perücken</p>
+                  <p class="lp-treatment-comparison__card-desc">Kein eigenes Haar, viele Einschränkungen.</p>
+                </div>
+              </div>
+
+            </div>
+            <!-- / grid -->
+
+            <!-- Featured: Haartransplantation -->
+            <div class="lp-treatment-comparison__featured">
+              <div class="lp-treatment-comparison__featured-img-wrap">
+                <img
+                  src="assets/images/tc5-big.webp"
+                  alt="Haartransplantation"
+                  class="lp-treatment-comparison__featured-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="lp-treatment-comparison__featured-info">
+                <img
+                  src="assets/images/chack.svg"
+                  alt="Checkmark"
+                  class="lp-treatment-comparison__featured-check"
+                />
+                <div class="lp-treatment-comparison__featured-text">
+                  <p class="lp-treatment-comparison__featured-name">Haartransplantation</p>
+                  <p class="lp-treatment-comparison__featured-subtitle">Volles, natürliches Haar, das hält.</p>
+                </div>
+              </div>
+            </div>
+            <!-- / featured -->
+
+          </div>
+        </div>
+      </section>
+      <!-- / lp-treatment-comparison -->
+      <section class="lp-benefits" id="vorteile">
+        <div class="container">
+          <div class="lp-benefits__header">
+            <h2 class="lp-benefits__title">
+              Über 150.000 glückliche Patienten mit vollem Haar.
+            </h2>
+          </div>
+
+          <div class="lp-benefits__grid">
+            <!-- Card 1 -->
+            <div class="lp-benefits__card">
+              <h3 class="lp-benefits__card-title">
+                Ihre wirklich<br />schmerzfreie Behandlung
+              </h3>
+              <img
+                src="assets/images/benefits1.svg"
+                alt="schmerzfreie Behandlung"
+                class="lp-benefits__card-img"
+                loading="lazy"
+              />
+              <p class="lp-benefits__card-text">
+                Dank der exklusiven Betäubung durch Sedierung, spüren Sie
+                während Ihrer Behandlung keinerlei Schmerzen. Wir garantieren
+                100% Komfort.
+              </p>
+            </div>
+
+            <!-- Card 2 (Highlight) -->
+            <div class="lp-benefits__card lp-benefits__card--highlight">
+              <h3 class="lp-benefits__card-title">5-Ärzte Standard</h3>
+              <img
+                src="assets/images/benefits2.svg"
+                alt="5-Ärzte Standard"
+                class="lp-benefits__card-img"
+                loading="lazy"
+              />
+              <p class="lp-benefits__card-text">
+                Während Ihrer Behandlung bei Elithair sorgen 5 ärztliche
+                Checkpoints für einen optimalen Qualitätsstandard.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="lp-benefits__card">
+              <h3 class="lp-benefits__card-title">8 deutsche Standorte</h3>
+              <img
+                src="assets/images/benefits3.svg"
+                alt="8 deutsche Standorte"
+                class="lp-benefits__card-img"
+                loading="lazy"
+              />
+              <p class="lp-benefits__card-text">
+                Sie finden uns an zahlreichen Standorten direkt in Ihrer Nähe.
+              </p>
+            </div>
+          </div>
+
+          <div class="lp-benefits__cta">
+            <div class="btn-item">
+              <a href="#cta" class="btn btn--secondary">Haaranalyse starten</a>
+              <span>( kostenlos &amp; unverbindlich )</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / lp-benefits -->
+
+      <section class="lp-prices-tables" id="preis">
+        <div class="container">
+          <div class="lp-prices-tables__inner">
+            <!-- Content Left -->
+            <div class="lp-prices-tables__content">
+              <h2 class="lp-prices-tables__title">
+                Nachhaltiges und natürliches Ergebnis zu besten Konditionen beim
+                Marktführer
+              </h2>
+
+              <div class="lp-cta-wrapper lp-prices-tables__cta--desktop">
+                <a href="#" class="lp-btn">Genauen Preis berechnen</a>
+                <p class="lp-cta-subtitle">kostenlos & unverbindlich</p>
+              </div>
+            </div>
+
+            <!-- Image Right (Middle on Mobile) -->
+            <div class="lp-prices-tables__image-wrap">
+              <img
+                src="assets/images/preis-grfik-fresh-up.png"
+                alt="Preis Übersicht"
+                loading="lazy"
+                class="lp-prices-tables__image"
+              />
+            </div>
+
+            <!-- CTA Bottom on Mobile -->
+            <div class="lp-cta-wrapper lp-prices-tables__cta--mobile">
+              <a href="#" class="lp-btn">Genauen Preis berechnen</a>
+              <p class="lp-cta-subtitle">kostenlos & unverbindlich</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lp-logos">
+        <div class="container">
+          <p class="lp-logos__label">Bekannt aus</p>
+          <div class="lp-logos__row">
+            <div class="lp-logos__logo">
+              <img src="assets/images/b1.svg" alt="SAT.1" loading="lazy" />
+            </div>
+            <div class="lp-logos__logo">
+              <img src="assets/images/b2.svg" alt="ARD" loading="lazy" />
+            </div>
+            <div class="lp-logos__logo">
+              <img src="assets/images/b3.svg" alt="Welt der Wunder" loading="lazy" />
+            </div>
+            <div class="lp-logos__logo">
+              <img src="assets/images/b4.svg" alt="WELT" loading="lazy" />
+            </div>
+            <div class="lp-logos__logo">
+              <img src="assets/images/b5.svg" alt="Galileo" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / lp-logos -->
+
+      <section class="lp-before-after">
+        <div class="container">
+          <div class="lp-before-after__header">
+            <h2 class="lp-before-after__title">
+              In nur 6 Monaten zu vollem Haar.
+            </h2>
+          </div>
+
+          <div class="lp-before-after__grid">
+            <!-- Top row: 4 small items -->
+            <div class="lp-before-after__item">
+              <div class="lp-before-after__card">
+                <img
+                  src="assets/images/alex-tag-1.jpg"
+                  alt="1. Tag"
+                  class="lp-before-after__img"
+                  loading="lazy"
+                />
+              </div>
+              <span class="lp-before-after__label">1. Tag</span>
+            </div>
+            <div class="lp-before-after__item">
+              <div class="lp-before-after__card">
+                <img
+                  src="assets/images/alex-monat-1.jpg"
+                  alt="1. Monat"
+                  class="lp-before-after__img"
+                  loading="lazy"
+                />
+              </div>
+              <span class="lp-before-after__label">1. Monat</span>
+            </div>
+            <div class="lp-before-after__item">
+              <div class="lp-before-after__card">
+                <img
+                  src="assets/images/alex-monat-3.jpg"
+                  alt="3. Monat"
+                  class="lp-before-after__img"
+                  loading="lazy"
+                />
+              </div>
+              <span class="lp-before-after__label">3. Monat</span>
+            </div>
+            <div class="lp-before-after__item">
+              <div class="lp-before-after__card">
+                <img
+                  src="assets/images/alex-monat-5.jpg"
+                  alt="5. Monat"
+                  class="lp-before-after__img"
+                  loading="lazy"
+                />
+              </div>
+              <span class="lp-before-after__label">5. Monat</span>
+            </div>
+
+            <!-- Final item: spans full bottom row -->
+            <div class="lp-before-after__item lp-before-after__item--final">
+              <div class="lp-before-after__final-card">
+                <div class="lp-before-after__final-img-wrap">
+                  <img
+                    src="assets/images/alex-monat-6.jpg"
+                    alt="6. Monat"
+                    class="lp-before-after__img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="lp-before-after__final-info">
+                  <img
+                    src="assets/images/chack.svg"
+                    alt="Checkmark"
+                    class="lp-before-after__final-check"
+                  />
+                  <div class="lp-before-after__final-text">
+                    <span class="lp-before-after__final-month">6. Monat</span>
+                    <span class="lp-before-after__final-desc">Das Ergebnis nach 6 Monaten!</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lp-cta-wrapper lp-before-after__cta">
+            <div class="btn-item">
+              <a href="#preis" class="btn btn--primary">Bin ich geeignet?</a>
+              <span>Von Ärzten prüfen lassen</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lp-support">
+        <div class="container">
+          <h2 class="lp-support__title">In 3 Schritten zu Ihrem vollen Haar</h2>
+
+          <div class="lp-support__grid">
+
+            <!-- Step 1 -->
+            <div class="lp-support__card">
+              <div class="lp-support__card-img-wrap">
+                <img
+                  src="assets/images/s3.jpg"
+                  alt="Haaranalyse starten"
+                  class="lp-support__card-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="lp-support__card-body">
+                <span class="lp-support__step-badge">1</span>
+                <p class="lp-support__card-label">Haaranlyse starten</p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="lp-support__card">
+              <div class="lp-support__card-img-wrap">
+                <img
+                  src="assets/images/s2.jpg"
+                  alt="Telefonische Beratung ohne Druck"
+                  class="lp-support__card-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="lp-support__card-body">
+                <span class="lp-support__step-badge">2</span>
+                <p class="lp-support__card-label">Telefonische Beratung ohne Druck</p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="lp-support__card">
+              <div class="lp-support__card-img-wrap">
+                <img
+                  src="assets/images/s1.jpg"
+                  alt="Behandlungszeitraum auswählen"
+                  class="lp-support__card-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="lp-support__card-body">
+                <span class="lp-support__step-badge">3</span>
+                <p class="lp-support__card-label">Behandlungszeitraum auswählen</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="lp-support__cta">
+            <div class="btn-item">
+              <a href="#preis" class="btn btn--secondary">Haaranalyse starten</a>
+              <span>kostenlos &amp; unverbindlich</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lp-suitability-check">
+        <div class="container">
+          <div class="lp-suitability-check__intro">
+            <h2 class="lp-suitability-check__title">
+              Welche Situation trifft auf Sie zu?
+            </h2>
+            <p class="lp-suitability-check__subtitle">Jetzt klicken.</p>
+          </div>
+  
+          <div class="lp-suitability-check__card">
+  
+            <ul class="lp-suitability-check__rows">
+              <li class="lp-suitability-check__row">
+                <img
+                  src="assets/images/sc1.png"
+                  alt="Geheimratsecken"
+                  class="lp-suitability-check__row-img"
+                  loading="lazy"
+                />
+                <span class="lp-suitability-check__row-label">Geheimratsecken</span>
+              </li>
+              <li class="lp-suitability-check__row">
+                <img
+                  src="assets/images/sc2.png"
+                  alt="Tonsur"
+                  class="lp-suitability-check__row-img"
+                  loading="lazy"
+                />
+                <span class="lp-suitability-check__row-label">Tonsur</span>
+              </li>
+              <li class="lp-suitability-check__row">
+                <img
+                  src="assets/images/sc3.png"
+                  alt="Gesamter Kopf"
+                  class="lp-suitability-check__row-img"
+                  loading="lazy"
+                />
+                <span class="lp-suitability-check__row-label">Gesamter Kopf</span>
+              </li>
+              <li class="lp-suitability-check__row">
+                <img
+                  src="assets/images/sc4.png"
+                  alt="Kein Bart"
+                  class="lp-suitability-check__row-img"
+                  loading="lazy"
+                />
+                <span class="lp-suitability-check__row-label">Kein Bart</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+      </section>
+      <!-- / lp-suitability-check -->
+
+      <section class="lp-slider" id="erfahrungsberichte">
+        <div class="container">
+          <div class="lp-slider__header">
+            <h2 class="lp-slider__title">
+              Das sagen Patienten über die<br class="desktop-only" />
+              Haartransplantation bei Elithair
+            </h2>
+          </div>
+
+          <div
+            class="lp-slider__slider-wrap embla em__threeColumns-03"
+            data-mobile-only="1"
+          >
+            <div class="embla__viewport">
+              <div class="embla__container lp-slider__grid">
+                <!-- Slide 1 -->
+                <div class="embla__slide">
+                  <div class="lp-slider__card">
+                    <div class="lp-slider__badge">
+                      <img src="assets/images/g2.svg" alt="Google 4.9 Stars" />
+                    </div>
+                    <div class="lp-slider__card-inner">
+                      <a
+                        href="https://vimeo.com/1079683486"
+                        target="_blank"
+                        class="lp-slider__video-link"
+                        data-vimeo-id="1079683486"
+                      >
+                        <img
+                          src="assets/images/Didac-Thumbnail.jpg"
+                          alt="Didac Video"
+                          class="lp-slider__video-img"
+                        />
+                      </a>
+                      <div class="lp-slider__card-content">
+                        <h3 class="lp-slider__card-title">
+                          Didac S. – 4500 Grafts
+                        </h3>
+                        <p class="lp-slider__card-text">
+                          „Haare geben mir ein Sicherheitsgefühl, ich kann jetzt
+                          meine Haare wieder stylen wie ich möchte!“
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="embla__slide">
+                  <div class="lp-slider__card">
+                    <div class="lp-slider__badge">
+                      <img src="assets/images/g2.svg" alt="Google 4.9 Stars" />
+                    </div>
+                    <div class="lp-slider__card-inner">
+                      <a
+                        href="https://vimeo.com/1079683343"
+                        target="_blank"
+                        class="lp-slider__video-link"
+                        data-vimeo-id="1079683343"
+                      >
+                        <img
+                          src="assets/images/Artur-Thumbnail.jpg"
+                          alt="Artur Video"
+                          class="lp-slider__video-img"
+                        />
+                      </a>
+                      <div class="lp-slider__card-content">
+                        <h3 class="lp-slider__card-title">
+                          Artur H. – 3300 Grafts
+                        </h3>
+                        <p class="lp-slider__card-text">
+                          „Für mich hat sich nach der Behandlung viel geändert,
+                          am stärksten mein Selbstbewusstsein.“
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="embla__slide">
+                  <div class="lp-slider__card">
+                    <div class="lp-slider__badge">
+                      <img src="assets/images/g2.svg" alt="Google 4.9 Stars" />
+                    </div>
+                    <div class="lp-slider__card-inner">
+                      <a
+                        href="https://vimeo.com/1079683444"
+                        target="_blank"
+                        class="lp-slider__video-link"
+                        data-vimeo-id="1079683444"
+                      >
+                        <img
+                          src="assets/images/Cillian-Thumbnail.jpg"
+                          alt="Cillian Video"
+                          class="lp-slider__video-img"
+                        />
+                      </a>
+                      <div class="lp-slider__card-content">
+                        <h3 class="lp-slider__card-title">
+                          Cillian E. – 3140 Grafts
+                        </h3>
+                        <p class="lp-slider__card-text">
+                          „Jeder Glücksmoment hat eine Geschichte! Ich habe
+                          gemerkt wie sich mein Leben nach der Behandlung
+                          verbessert hat“
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="embla__dots"></div>
+            <div class="lp-slider__cta">
+            <div class="btn-item">
+                <a href="#preis" class="btn btn--primary">Bin ich geeignet?</a>
+                <span>kostenlos & unverbindlich</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lp-package">
+        <div class="container">
+          <h2 class="lp-package__title">Ihr All-Inclusive-Paket</h2>
+
+          <div class="lp-package__content">
+            <!-- Image — desktop only -->
+            <div class="lp-package__image">
+              <img
+                src="assets/images/collage-clinic-mobile.webp"
+                alt="Elithair Klinik"
+                loading="lazy"
+              />
+            </div>
+
+            <!-- Table -->
+            <div class="lp-package__table-wrapper">
+              <div class="lp-package__highlight">
+                <div class="lp-package__highlight-icon-wrap">
+                  <img
+                    src="assets/images/elit-icon-2.svg"
+                    alt="Elithair Logo"
+                    class="lp-package__highlight-icon"
+                  />
+                </div>
+              </div>
+
+              <div class="lp-package__table">
+                <!-- Header Row -->
+                <div class="lp-package__row lp-package__row--header">
+                  <div class="lp-package__cell lp-package__cell--head lp-package__cell--vorteile-head">
+                    Vorteile
+                  </div>
+                  <div class="lp-package__cell lp-package__cell--head lp-package__cell--elit"></div>
+                  <div class="lp-package__cell lp-package__cell--head lp-package__cell--andere-head">
+                    Andere
+                  </div>
+                </div>
+
+                <!-- Row 1: Hotel + Transfer — beide check -->
+                <div class="lp-package__row">
+                  <div class="lp-package__cell lp-package__cell--vorteile">Hotel + Transfer</div>
+                  <div class="lp-package__cell lp-package__cell--elit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                      <path d="M14,28A14,14,0,1,0,0,14,14,14,0,0,0,14,28Zm6.18-16.57-7,7a1.307,1.307,0,0,1-1.854,0l-3.5-3.5A1.311,1.311,0,0,1,9.68,13.076l2.57,2.57L18.32,9.57a1.311,1.311,0,0,1,1.854,1.854Z" fill="#b3d5fc"/>
+                    </svg>
+                  </div>
+                  <div class="lp-package__cell lp-package__cell--andere">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                      <path d="M14,28A14,14,0,1,0,0,14,14,14,0,0,0,14,28Zm6.18-16.57-7,7a1.307,1.307,0,0,1-1.854,0l-3.5-3.5A1.311,1.311,0,0,1,9.68,13.076l2.57,2.57L18.32,9.57a1.311,1.311,0,0,1,1.854,1.854Z" fill="#014799"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Row 2: Sleep-Deep Methode — check / X -->
+                <div class="lp-package__row">
+                  <div class="lp-package__cell lp-package__cell--vorteile">Sleep-Deep Methode: 0% Schmerzen</div>
+                  <div class="lp-package__cell lp-package__cell--elit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                      <path d="M14,28A14,14,0,1,0,0,14,14,14,0,0,0,14,28Zm6.18-16.57-7,7a1.307,1.307,0,0,1-1.854,0l-3.5-3.5A1.311,1.311,0,0,1,9.68,13.076l2.57,2.57L18.32,9.57a1.311,1.311,0,0,1,1.854,1.854Z" fill="#b3d5fc"/>
+                    </svg>
+                  </div>
+                  <div class="lp-package__cell lp-package__cell--andere">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18.243 18.242">
+                      <path d="M23,9,9,23M9,9,23,23" transform="translate(-6.879 -6.879)" fill="none" stroke="#626262" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Row 3: 5-Ärzte Standard — check / X -->
+                <div class="lp-package__row">
+                  <div class="lp-package__cell lp-package__cell--vorteile">
+                    5-Ärzte Standard
+                    <span class="lp-package__badge-new">Jetzt Neu</span>
+                  </div>
+                  <div class="lp-package__cell lp-package__cell--elit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                      <path d="M14,28A14,14,0,1,0,0,14,14,14,0,0,0,14,28Zm6.18-16.57-7,7a1.307,1.307,0,0,1-1.854,0l-3.5-3.5A1.311,1.311,0,0,1,9.68,13.076l2.57,2.57L18.32,9.57a1.311,1.311,0,0,1,1.854,1.854Z" fill="#b3d5fc"/>
+                    </svg>
+                  </div>
+                  <div class="lp-package__cell lp-package__cell--andere">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18.243 18.242">
+                      <path d="M23,9,9,23M9,9,23,23" transform="translate(-6.879 -6.879)" fill="none" stroke="#626262" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Row 4: 8 deutsche Standorte — check / X -->
+                <div class="lp-package__row">
+                  <div class="lp-package__cell lp-package__cell--vorteile">8 deutsche Standorte</div>
+                  <div class="lp-package__cell lp-package__cell--elit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                      <path d="M14,28A14,14,0,1,0,0,14,14,14,0,0,0,14,28Zm6.18-16.57-7,7a1.307,1.307,0,0,1-1.854,0l-3.5-3.5A1.311,1.311,0,0,1,9.68,13.076l2.57,2.57L18.32,9.57a1.311,1.311,0,0,1,1.854,1.854Z" fill="#b3d5fc"/>
+                    </svg>
+                  </div>
+                  <div class="lp-package__cell lp-package__cell--andere">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18.243 18.242">
+                      <path d="M23,9,9,23M9,9,23,23" transform="translate(-6.879 -6.879)" fill="none" stroke="#626262" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Row 5: 20 jährige Garantie — check / X -->
+                <div class="lp-package__row">
+                  <div class="lp-package__cell lp-package__cell--vorteile">20 jährige Garantie</div>
+                  <div class="lp-package__cell lp-package__cell--elit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                      <path d="M14,28A14,14,0,1,0,0,14,14,14,0,0,0,14,28Zm6.18-16.57-7,7a1.307,1.307,0,0,1-1.854,0l-3.5-3.5A1.311,1.311,0,0,1,9.68,13.076l2.57,2.57L18.32,9.57a1.311,1.311,0,0,1,1.854,1.854Z" fill="#b3d5fc"/>
+                    </svg>
+                  </div>
+                  <div class="lp-package__cell lp-package__cell--andere">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18.243 18.242">
+                      <path d="M23,9,9,23M9,9,23,23" transform="translate(-6.879 -6.879)" fill="none" stroke="#626262" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lp-package__cta">
+            <div class="btn-item">
+              <a href="#preis" class="btn btn--primary">Haaranalyse starten</a>
+              <span>kostenlos &amp; unverbindlich</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lp-faq" id="faq">
+        <div class="container">
+          <div class="lp-faq__wrap">
+            <h2 class="lp-faq__title">FAQ - Elithair</h2>
+
+            <div class="lp-faq__list">
+              <!-- Item 1 -->
+              <details class="accordion__item" open>
+                <summary class="accordion__quesion">
+                  <span>Werde ich bei der Behandlung Schmerzen haben?</span>
+                  <span class="lp-faq__icon"></span>
+                </summary>
+                <div class="accordion__answer">
+                  <p>
+                    Elithair hat vor kurzem eine exklusive Methode entwickelt,
+                    die 0% Schmerzen bei der Behandlung garantiert. Das ist: die
+                    Sleep-Deep Methode.<br /><br />
+                    Bei der Sleep-Deep Methode wird dem Patienten intravenös ein
+                    Anästhetikum verabreicht, wodurch er 15 Minuten lang in den
+                    Tiefschlaf versetzt wird. In dieser Zeit findet dann die
+                    örtliche Betäubung statt. Somit garantiert Elithair 0%
+                    Schmerzen während der Behandlung.<br /><br />
+                    Hunderte Patienten konnten das bereits bestätigen.
+                  </p>
+                  <div class="lp-faq__cta">
+                    <a href="#" class="lp-faq__btn"
+                      >Jetzt Haaranalyse starten</a
+                    >
+                  </div>
+                </div>
+              </details>
+
+              <!-- Item 2 -->
+              <details class="accordion__item">
+                <summary class="accordion__quesion">
+                  <span>In welcher Klinik findet die Behandlung statt?</span>
+                  <span class="lp-faq__icon"></span>
+                </summary>
+                <div class="accordion__answer">
+                  <p>
+                    Die Behandlung findet in der Elithair Klinik in Istanbul
+                    statt, der größten Haartransplantationsklinik der Welt. Dort
+                    stehen Ihnen modernste OP-Zimmer und hochqualifizierte Teams
+                    zur Verfügung.
+                  </p>
+                  <div class="lp-faq__cta">
+                    <a href="#" class="lp-faq__btn"
+                      >Jetzt Haaranalyse starten</a
+                    >
+                  </div>
+                </div>
+              </details>
+
+              <!-- Item 3 -->
+              <details class="accordion__item">
+                <summary class="accordion__quesion">
+                  <span>Wie teuer ist eine Haartransplantation?</span>
+                  <span class="lp-faq__icon"></span>
+                </summary>
+                <div class="accordion__answer">
+                  <p>
+                    Die Kosten hängen von der Anzahl der benötigten Grafts und
+                    der gewählten Technik ab. In der Regel sparen Patienten bei
+                    Elithair bis zu 70% im Vergleich zu Preisen in Deutschland.
+                  </p>
+                  <div class="lp-faq__cta">
+                    <a href="#" class="lp-faq__btn"
+                      >Jetzt Haaranalyse starten</a
+                    >
+                  </div>
+                </div>
+              </details>
+
+              <!-- Item 4 -->
+              <details class="accordion__item">
+                <summary class="accordion__quesion">
+                  <span>Wie ist der genaue Ablauf in Istanbul?</span>
+                  <span class="lp-faq__icon"></span>
+                </summary>
+                <div class="accordion__answer">
+                  <p>
+                    Nach Ihrer Ankunft am Flughafen werden Sie von unserem
+                    VIP-Shuttle abgeholt. Es folgen Voruntersuchungen, die
+                    Haaranalyse, die Operation und eine Nachuntersuchung, bevor
+                    Sie wieder nach Hause fliegen.
+                  </p>
+                  <div class="lp-faq__cta">
+                    <a href="#" class="lp-faq__btn"
+                      >Jetzt Haaranalyse starten</a
+                    >
+                  </div>
+                </div>
+              </details>
+
+              <!-- Item 5 -->
+              <details class="accordion__item">
+                <summary class="accordion__quesion">
+                  <span>Was ist bei der Buchung inklusive?</span>
+                  <span class="lp-faq__icon"></span>
+                </summary>
+                <div class="accordion__answer">
+                  <p>
+                    Unsere Pakete beinhalten den Hotelaufenthalt, alle
+                    Transfers, die Medikamente, die Haaranalyse, die
+                    PRP-Behandlung und die lebenslange Garantie auf die
+                    transplantierten Haare.
+                  </p>
+                  <div class="lp-faq__cta">
+                    <a href="#" class="lp-faq__btn"
+                      >Jetzt Haaranalyse starten</a
+                    >
+                  </div>
+                </div>
+              </details>
+
+              <!-- Item 6 -->
+              <details class="accordion__item">
+                <summary class="accordion__quesion">
+                  <span>Erhalte ich eine Garantie?</span>
+                  <span class="lp-faq__icon"></span>
+                </summary>
+                <div class="accordion__answer">
+                  <p>
+                    Ja, Elithair gibt Ihnen eine lebenslange Garantie auf alle
+                    transplantierten Haarfollikel. Das gibt Ihnen zusätzliche
+                    Sicherheit für ein dauerhaftes Ergebnis.
+                  </p>
+                  <div class="lp-faq__cta">
+                    <a href="#" class="lp-faq__btn"
+                      >Jetzt Haaranalyse starten</a
+                    >
+                  </div>
+                </div>
+              </details>
+
+              <!-- Item 7 -->
+              <details class="accordion__item">
+                <summary class="accordion__quesion">
+                  <span>Werde ich eine individuelle Behandlung erhalten?</span>
+                  <span class="lp-faq__icon"></span>
+                </summary>
+                <div class="accordion__answer">
+                  <p>
+                    Ja, bei Elithair wird jeder Patient individuell beraten. Mit
+                    Hilfe der NEO FUE Haaranalyse und modernster Diagnostik
+                    erstellen wir einen Behandlungsplan, der perfekt auf Ihre
+                    Bedürfnisse abgestimmt ist.
+                  </p>
+                  <div class="lp-faq__cta">
+                    <a href="#" class="lp-faq__btn"
+                      >Jetzt Haaranalyse starten</a
+                    >
+                  </div>
+                </div>
+              </details>
+
+              <!-- Item 8 -->
+              <details class="accordion__item">
+                <summary class="accordion__quesion">
+                  <span
+                    >Wie viele Operationen werden täglich durchgeführt?</span
+                  >
+                  <span class="lp-faq__icon"></span>
+                </summary>
+                <div class="accordion__answer">
+                  <p>
+                    Durch unsere Größe und Erfahrung führen wir täglich 60-70
+                    Operationen durch. Das macht uns zu einem der erfahrensten
+                    Anbieter weltweit.
+                  </p>
+                  <div class="lp-faq__cta">
+                    <a href="#" class="lp-faq__btn"
+                      >Jetzt Haaranalyse starten</a
+                    >
+                  </div>
+                </div>
+              </details>
+
+              <!-- Item 9 -->
+              <details class="accordion__item">
+                <summary class="accordion__quesion">
+                  <span
+                    >Wie ist der Heilungsverlauf nach einer
+                    Haartransplantation?</span
+                  >
+                  <span class="lp-faq__icon"></span>
+                </summary>
+                <div class="accordion__answer">
+                  <p>
+                    Die ersten 10 Tage sind entscheidend für das Anwachsen der
+                    Grafts. Nach etwa 2 Wochen sind die kleinen Krusten
+                    abgeheilt. Das finale Ergebnis sehen Sie nach ca. 12
+                    Monaten.
+                  </p>
+                  <div class="lp-faq__cta">
+                    <a href="#" class="lp-faq__btn"
+                      >Jetzt Haaranalyse starten</a
+                    >
+                  </div>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="lp-footer">
+      <div class="container">
+        <div class="lp-footer__bottom">
+          <div class="lp-footer__help">
+            <p>
+              Ihre Frage war nicht dabei?<br class="mobile-only" />
+              Wir sind jederzeit für Sie erreichbar!
+            </p>
+          </div>
+
+          <div class="lp-footer__contact">
+            <strong>Kontakt</strong>
+            <p>Tel.: +49 30 – 60988606</p>
+            <p>info@elithairtransplant.com</p>
+          </div>
+
+          <div class="lp-footer__links">
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutz</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="assets/js/embla-carousel.umd.js"></script>
+    <script defer src="assets/js/custom.js"></script>
+  </body>
+</html>

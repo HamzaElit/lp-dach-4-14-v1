@@ -1,6 +1,3 @@
 [build]
-  publish = "dist"
-  command = "npm run build && npm run stage"
-
-[build.environment]
-  NODE_VERSION = "22"
+  publish = "."
+  command = "npm run build"
