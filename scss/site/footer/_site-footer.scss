@@ -10,7 +10,7 @@
     line-height: 1.2;
     margin-bottom: 3rem;
     text-transform: none; // Default text
-    text-align: left; // Left on mobile
+    text-align: left;
 
     @include lg-up {
       font-size: 3rem; // 3rem as requested
