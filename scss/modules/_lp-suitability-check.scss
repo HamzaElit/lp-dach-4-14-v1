@@ -121,23 +121,32 @@
 
   // ─── Single row ────────────────────────────────────────
   &__row {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
     background-color: var(--White);
     border-radius: 1.6rem;
-    padding: 0.8rem 1rem;
     cursor: pointer;
     @include transition(box-shadow 0.2s ease, transform 0.2s ease);
 
     @include md-up {
       border-radius: 2rem;
-      padding: 1.2rem 2rem;
     }
 
     @include hover {
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
       transform: translateY(-2px);
+    }
+  }
+
+  &__row-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+
+    @include md-up {
+      padding: 1.2rem 2rem;
     }
   }
 
